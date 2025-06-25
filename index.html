@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" href="https://docs.fontawesome.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV en ligne</title>
+</head>
+<body onload="cacherpartie2();cacherpartie3();cacherpartie4();montrerpartie1()">
+    <header>
+    <div class="header-content">
+        <img src="https://i.imgflip.com/347xm2.jpg" alt="Photo de profil" class="profile-pic">
+        <div>
+            <h1>Matéo MICHEL</h1>
+            <p class="contact">
+                Blavozy 43700 France· 06 15 10 23 · mateodematteis010609@email.com
+            </p>
+        </div>
+    </div>
+    <hr class="header-separator">
+</header>
+    <div class="cv-container">
+    <div class="cv-main">
+    <div class="cv-left">
+        <button onclick="cacherpartie2();cacherpartie3();cacherpartie4();montrerpartie1()"><i class="fa-solid fa-user"></i>Profil</button>
+        <button onclick="cacherpartie1();cacherpartie3();cacherpartie4();montrerpartie2()">Expériences</button>
+        <button onclick="cacherpartie1();cacherpartie2();cacherpartie4();montrerpartie3()">Formation</button>
+        <button onclick="cacherpartie2();cacherpartie3();cacherpartie1();montrerpartie4()">Compétences</button>
+    </div>
+    <div class="cv-right">
+        <br/>
+    <section id = "partie1">
+            <h2>Profil</h2>
+            <h3>Mon statut actuel</h3>
+            <p>
+                Lycéen en bac général avec spécialités:Mathématiques,Physique chimie et Sciences de la vie et de la Terre.
+                J'aussi pris 2 options: Sport et DNL Physique-Chimie(Physique-Chimie en anglais).
+            </p>
+            <h3>Mes activités parascolaires</h3>
+            <p>En dehors du lycée je pratique du piano à <a href="https://www.ateliersdesarts.fr" target="_blank">l'Atelier des Arts du Puy en Velay</a>, je suis en 5ème année.</p>
+            <h3>Mes loisirs</h3>
+            <p>J'aime beaucoup les jeux vidéos, je joue par exemple à clash royale ou à minecraft.
+                Avec quelque amis nous sommes aussi passioné de minéraux et pendant les vacances nous allons prospecter dans des endroits où nous pouvons en trouver.
+            </p>
+    </section>
+        <section id="partie2">
+            <h2>Mes expériences </h2>
+            </h2>
+            <h3>Mon stage à <a href="https://www.delbard.fr/magasins/jardinerie-delbard-blavozy/" target="_blank"> Delbart </a></h3>
+            <p> En 3ème année j'ai fait un stage dans le magasin delbart où j'ai principalement travaillé en animalerie, j'ai donc appris à entretenir l'environement, m'occuper d'eux et gérer quelque clients.</p>
+            <h3>Mon stage en programmation de site Web</h3>
+                <br/><p>En seconde j'ai fait une stage dans une entreprise programmant des sites Web, c'est d'ailleurs à cette occasion que j'ai programmé ce cv en ligne qui regroupe la plupart de mes compétence en programmations.</p>
+        </section>
+           <section id="partie3">
+            <h2>Formation</h2>
+            <p>Actuellement je suis en lycée générale avec des spécialités scientifiques.Plus tard j'envisage de faire des études supérieurs (bac+2-5)
+                Je n'ai pas enore d'idée précise de métiers
+                mais j'aimerais travaillé dans un domaine scientique en étant ingénieur ce serait un type de travail que j'apprécirais
+            </p>
+           </section>
+            <section id = "partie4">
+            <h2>Compétences</h2>
+            <h3>Langues</h3>
+            <ul class="skills">
+                <li>Français: Langue maternelle</li>
+                <li>Anglais: Niveau B2</li>
+                <li>Italien: Niveau A2</li>
+            </ul>
+            <h3>Informatique</h3>
+            <ul class="skills">
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <h3>Sciences</h3>
+            <ul class="skills">
+                <li>Mathématiques niveau seconde</li>
+                <li>Physique-Chimie niveau seconde</li>
+                <li>Sciences de la Vie et de la Terre niveau seconde</li>
+            </ul>
+            </section>
+        
+    </div>
+</div>
+    </div>
+</div>
+    <script src="test.js"></script>
+</body>
+</html>
