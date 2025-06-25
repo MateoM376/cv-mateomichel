@@ -5,12 +5,14 @@
     <link rel="stylesheet" href="style.css" href="https://docs.fontawesome.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon CV en ligne</title>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body onload="cacherpartie2();cacherpartie3();cacherpartie4();montrerpartie1()">
+<body onload="cacherpartie2();cacherpartie3();cacherpartie4();montrerpartie1(); repositionnerBoutonsSelonTaille()">
+    
     <header>
-    <div class="header-content">
+    <div class="header-content" style="flex-direction: column; gap: 12px;">
         <img src="https://i.imgflip.com/347xm2.jpg" alt="Photo de profil" class="profile-pic">
-        <div>
+        <div style="text-align: center;">
             <h1>Matéo MICHEL</h1>
             <p class="contact">
                 Blavozy 43700 France· 06 15 10 23 · mateodematteis010609@email.com
@@ -18,17 +20,25 @@
         </div>
     </div>
     <hr class="header-separator">
-</header>
+    </header>
+   
+    
     <div class="cv-container">
     <div class="cv-main">
-    <div class="cv-left">
+    <div class="cv-left"id="boutonleft">
         <button onclick="cacherpartie2();cacherpartie3();cacherpartie4();montrerpartie1()"><i class="fa-solid fa-user"></i>Profil</button>
         <button onclick="cacherpartie1();cacherpartie3();cacherpartie4();montrerpartie2()">Expériences</button>
         <button onclick="cacherpartie1();cacherpartie2();cacherpartie4();montrerpartie3()">Formation</button>
         <button onclick="cacherpartie2();cacherpartie3();cacherpartie1();montrerpartie4()">Compétences</button>
     </div>
-    <div class="cv-right">
-        <br/>
+    
+    <div class="cv-top" id="boutontop">
+    <button onclick="cacherpartie2();cacherpartie3();cacherpartie4();montrerpartie1()"><i class="fa-solid fa-user"></i>Profil</button>
+    <button onclick="cacherpartie1();cacherpartie3();cacherpartie4();montrerpartie2()">Expériences</button>
+    <button onclick="cacherpartie1();cacherpartie2();cacherpartie4();montrerpartie3()">Formation</button>
+    <button onclick="cacherpartie2();cacherpartie3();cacherpartie1();montrerpartie4()">Compétences</button>
+</div>
+        <div class="cv-right">
     <section id = "partie1">
             <h2>Profil</h2>
             <h3>Mon statut actuel</h3>
@@ -78,7 +88,7 @@
                 <li>Sciences de la Vie et de la Terre niveau seconde</li>
             </ul>
             </section>
-        
+        </div>
     </div>
 </div>
     </div>
