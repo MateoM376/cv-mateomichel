@@ -30,5 +30,19 @@ document.querySelectorAll('.cv-left button').forEach(btn => {
     btn.addEventListener('click', function() {
         document.querySelectorAll('.cv-left button').forEach(b => b.classList.remove('selected'));
         this.classList.add('selected');
-    });
-});
+    })
+})
+function repositionnerBoutonsSelonTaille() {
+    const largeur = window.innerWidth;
+    const boutongauche = document.getElementById("boutonleft");
+    const boutonhaut = document.getElementById('boutontop');
+if (largeur <= 1000) {
+   boutonhaut.style.display = "block";
+   boutongauche.style.display = "none";
+} else {
+   boutonhaut.style.display = "none";
+   boutongauche.style.display = "block";
+     
+    }
+}
+window.addEventListener("resize", repositionnerBoutonsSelonTaille);
